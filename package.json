@@ -1,0 +1,29 @@
+{
+  "name": "pmb-webserver",
+  "version": "0.0.1",
+  "description": "A webserver service for pmb. It forwards requests to the pmb server to be pattern-matched.",
+  "main": "index.js",
+  "bin": {
+    "pmb-webserver": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BWOC/pmb-webserver.git"
+  },
+  "keywords": [
+    "pmb",
+    "webserver"
+  ],
+  "author": "Sean Goheen for Believers World Outreach Church",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BWOC/pmb-webserver/issues"
+  },
+  "homepage": "https://github.com/BWOC/pmb-webserver#readme",
+  "dependencies": {
+    "pmb": "0.0.1"
+  }
+}
