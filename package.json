@@ -1,6 +1,6 @@
 {
   "name": "pmb-webserver",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A webserver service for pmb. It forwards requests to the pmb server to be pattern-matched.",
   "main": "index.js",
   "bin": {
