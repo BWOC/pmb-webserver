@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 //var config = require('./config').config;
 var extend = require('util')._extend;
 var restify = require('restify');
