@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/BWOC/pmb-webserver#readme",
   "dependencies": {
-    "pmb": "^0.0.1",
+    "pmb": "^0.0.4",
     "restify": "^4.0.4"
   }
 }
