@@ -41,7 +41,7 @@ function respond(req, res, next) {
         console.log("Response: ", response);
         
         // Reveive response and return it to client
-        res.send(response);
+        res.send(response.code, response.response);
         next();
         return;
     });
