@@ -56,6 +56,10 @@ function respond(req, res, next) {
 
 // Request routing
 server.get(/.*/, respond);
+server.post(/.*/, respond);
+server.put(/.*/, respond);
+server.head(/.*/, respond);
+server.del(/.*/, respond);
 
 
 // Start server
