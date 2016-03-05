@@ -14,14 +14,14 @@ function respond(req, res, next) {
     // Publish message to queue
     var msg = extend({}, req.params);
     msg['_role']    = 'webserver';
+    msg['_id']      = req.id();
+    msg['_url']     = req.url;
+    msg['_path']    = req.path();
     msg['_request'] = {
-        id:             req.id(),
         headers:        req.headers,
         httpVersion:    req.httpVersion,
         statusCode:     req.statusCode,
         statusMessage:  req.statusMessage,
-        url:            req.url,
-        path:           req.path(),
         rawQuery:       req.getQuery(),
         query:          req.query,
         params:         req.params
