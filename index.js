@@ -40,8 +40,18 @@ function respond(req, res, next) {
         
         console.log("Response: ", response);
         
+        if(response.headers && response.headers.hasOwnProperty('length')){
+            for(var header in response.headers){
+                res.header(header, response.headers[header]);
+            }
+        }
+        
+        if(response.status){
+            res.status(response.status);
+        }
+        
         // Reveive response and return it to client
-        res.send(response.code, response.response);
+        res.send(response.response);
         next();
         return;
     });
